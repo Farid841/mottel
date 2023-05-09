@@ -1,0 +1,601 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0208198F2A0A2AF200B5038E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0208198E2A0A2AF200B5038E /* AppDelegate.swift */; };
+		020819912A0A2AF200B5038E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020819902A0A2AF200B5038E /* SceneDelegate.swift */; };
+		020819932A0A2AF200B5038E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020819922A0A2AF200B5038E /* ViewController.swift */; };
+		020819962A0A2AF200B5038E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 020819942A0A2AF200B5038E /* Main.storyboard */; };
+		020819982A0A2AF300B5038E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 020819972A0A2AF300B5038E /* Assets.xcassets */; };
+		0208199B2A0A2AF300B5038E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 020819992A0A2AF300B5038E /* LaunchScreen.storyboard */; };
+		020819A62A0A2AF300B5038E /* MottleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020819A52A0A2AF300B5038E /* MottleTests.swift */; };
+		020819B02A0A2AF300B5038E /* MottleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020819AF2A0A2AF300B5038E /* MottleUITests.swift */; };
+		020819B22A0A2AF300B5038E /* MottleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020819B12A0A2AF300B5038E /* MottleUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		020819A22A0A2AF300B5038E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 020819832A0A2AF200B5038E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0208198A2A0A2AF200B5038E;
+			remoteInfo = Mottle;
+		};
+		020819AC2A0A2AF300B5038E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 020819832A0A2AF200B5038E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0208198A2A0A2AF200B5038E;
+			remoteInfo = Mottle;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0208198B2A0A2AF200B5038E /* Mottle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mottle.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0208198E2A0A2AF200B5038E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		020819902A0A2AF200B5038E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		020819922A0A2AF200B5038E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		020819952A0A2AF200B5038E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		020819972A0A2AF300B5038E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0208199A2A0A2AF300B5038E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0208199C2A0A2AF300B5038E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		020819A12A0A2AF300B5038E /* MottleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MottleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		020819A52A0A2AF300B5038E /* MottleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MottleTests.swift; sourceTree = "<group>"; };
+		020819AB2A0A2AF300B5038E /* MottleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MottleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		020819AF2A0A2AF300B5038E /* MottleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MottleUITests.swift; sourceTree = "<group>"; };
+		020819B12A0A2AF300B5038E /* MottleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MottleUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		020819882A0A2AF200B5038E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0208199E2A0A2AF300B5038E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		020819A82A0A2AF300B5038E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		020819822A0A2AF200B5038E = {
+			isa = PBXGroup;
+			children = (
+				0208198D2A0A2AF200B5038E /* Mottle */,
+				020819A42A0A2AF300B5038E /* MottleTests */,
+				020819AE2A0A2AF300B5038E /* MottleUITests */,
+				0208198C2A0A2AF200B5038E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0208198C2A0A2AF200B5038E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0208198B2A0A2AF200B5038E /* Mottle.app */,
+				020819A12A0A2AF300B5038E /* MottleTests.xctest */,
+				020819AB2A0A2AF300B5038E /* MottleUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0208198D2A0A2AF200B5038E /* Mottle */ = {
+			isa = PBXGroup;
+			children = (
+				0208198E2A0A2AF200B5038E /* AppDelegate.swift */,
+				020819902A0A2AF200B5038E /* SceneDelegate.swift */,
+				020819922A0A2AF200B5038E /* ViewController.swift */,
+				020819942A0A2AF200B5038E /* Main.storyboard */,
+				020819972A0A2AF300B5038E /* Assets.xcassets */,
+				020819992A0A2AF300B5038E /* LaunchScreen.storyboard */,
+				0208199C2A0A2AF300B5038E /* Info.plist */,
+			);
+			path = Mottle;
+			sourceTree = "<group>";
+		};
+		020819A42A0A2AF300B5038E /* MottleTests */ = {
+			isa = PBXGroup;
+			children = (
+				020819A52A0A2AF300B5038E /* MottleTests.swift */,
+			);
+			path = MottleTests;
+			sourceTree = "<group>";
+		};
+		020819AE2A0A2AF300B5038E /* MottleUITests */ = {
+			isa = PBXGroup;
+			children = (
+				020819AF2A0A2AF300B5038E /* MottleUITests.swift */,
+				020819B12A0A2AF300B5038E /* MottleUITestsLaunchTests.swift */,
+			);
+			path = MottleUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0208198A2A0A2AF200B5038E /* Mottle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 020819B52A0A2AF300B5038E /* Build configuration list for PBXNativeTarget "Mottle" */;
+			buildPhases = (
+				020819872A0A2AF200B5038E /* Sources */,
+				020819882A0A2AF200B5038E /* Frameworks */,
+				020819892A0A2AF200B5038E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Mottle;
+			productName = Mottle;
+			productReference = 0208198B2A0A2AF200B5038E /* Mottle.app */;
+			productType = "com.apple.product-type.application";
+		};
+		020819A02A0A2AF300B5038E /* MottleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 020819B82A0A2AF300B5038E /* Build configuration list for PBXNativeTarget "MottleTests" */;
+			buildPhases = (
+				0208199D2A0A2AF300B5038E /* Sources */,
+				0208199E2A0A2AF300B5038E /* Frameworks */,
+				0208199F2A0A2AF300B5038E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				020819A32A0A2AF300B5038E /* PBXTargetDependency */,
+			);
+			name = MottleTests;
+			productName = MottleTests;
+			productReference = 020819A12A0A2AF300B5038E /* MottleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		020819AA2A0A2AF300B5038E /* MottleUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 020819BB2A0A2AF300B5038E /* Build configuration list for PBXNativeTarget "MottleUITests" */;
+			buildPhases = (
+				020819A72A0A2AF300B5038E /* Sources */,
+				020819A82A0A2AF300B5038E /* Frameworks */,
+				020819A92A0A2AF300B5038E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				020819AD2A0A2AF300B5038E /* PBXTargetDependency */,
+			);
+			name = MottleUITests;
+			productName = MottleUITests;
+			productReference = 020819AB2A0A2AF300B5038E /* MottleUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		020819832A0A2AF200B5038E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					0208198A2A0A2AF200B5038E = {
+						CreatedOnToolsVersion = 13.3;
+					};
+					020819A02A0A2AF300B5038E = {
+						CreatedOnToolsVersion = 13.3;
+						TestTargetID = 0208198A2A0A2AF200B5038E;
+					};
+					020819AA2A0A2AF300B5038E = {
+						CreatedOnToolsVersion = 13.3;
+						TestTargetID = 0208198A2A0A2AF200B5038E;
+					};
+				};
+			};
+			buildConfigurationList = 020819862A0A2AF200B5038E /* Build configuration list for PBXProject "Mottle" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 020819822A0A2AF200B5038E;
+			productRefGroup = 0208198C2A0A2AF200B5038E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0208198A2A0A2AF200B5038E /* Mottle */,
+				020819A02A0A2AF300B5038E /* MottleTests */,
+				020819AA2A0A2AF300B5038E /* MottleUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		020819892A0A2AF200B5038E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0208199B2A0A2AF300B5038E /* LaunchScreen.storyboard in Resources */,
+				020819982A0A2AF300B5038E /* Assets.xcassets in Resources */,
+				020819962A0A2AF200B5038E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0208199F2A0A2AF300B5038E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		020819A92A0A2AF300B5038E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		020819872A0A2AF200B5038E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				020819932A0A2AF200B5038E /* ViewController.swift in Sources */,
+				0208198F2A0A2AF200B5038E /* AppDelegate.swift in Sources */,
+				020819912A0A2AF200B5038E /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0208199D2A0A2AF300B5038E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				020819A62A0A2AF300B5038E /* MottleTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		020819A72A0A2AF300B5038E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				020819B02A0A2AF300B5038E /* MottleUITests.swift in Sources */,
+				020819B22A0A2AF300B5038E /* MottleUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		020819A32A0A2AF300B5038E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0208198A2A0A2AF200B5038E /* Mottle */;
+			targetProxy = 020819A22A0A2AF300B5038E /* PBXContainerItemProxy */;
+		};
+		020819AD2A0A2AF300B5038E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0208198A2A0A2AF200B5038E /* Mottle */;
+			targetProxy = 020819AC2A0A2AF300B5038E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		020819942A0A2AF200B5038E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				020819952A0A2AF200B5038E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		020819992A0A2AF300B5038E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0208199A2A0A2AF300B5038E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		020819B32A0A2AF300B5038E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		020819B42A0A2AF300B5038E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		020819B62A0A2AF300B5038E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Mottle/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.projetios.Mottle;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		020819B72A0A2AF300B5038E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Mottle/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.projetios.Mottle;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		020819B92A0A2AF300B5038E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.projetios.MottleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Mottle.app/Mottle";
+			};
+			name = Debug;
+		};
+		020819BA2A0A2AF300B5038E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.projetios.MottleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Mottle.app/Mottle";
+			};
+			name = Release;
+		};
+		020819BC2A0A2AF300B5038E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.projetios.MottleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Mottle;
+			};
+			name = Debug;
+		};
+		020819BD2A0A2AF300B5038E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.projetios.MottleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Mottle;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		020819862A0A2AF200B5038E /* Build configuration list for PBXProject "Mottle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				020819B32A0A2AF300B5038E /* Debug */,
+				020819B42A0A2AF300B5038E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		020819B52A0A2AF300B5038E /* Build configuration list for PBXNativeTarget "Mottle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				020819B62A0A2AF300B5038E /* Debug */,
+				020819B72A0A2AF300B5038E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		020819B82A0A2AF300B5038E /* Build configuration list for PBXNativeTarget "MottleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				020819B92A0A2AF300B5038E /* Debug */,
+				020819BA2A0A2AF300B5038E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		020819BB2A0A2AF300B5038E /* Build configuration list for PBXNativeTarget "MottleUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				020819BC2A0A2AF300B5038E /* Debug */,
+				020819BD2A0A2AF300B5038E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 020819832A0A2AF200B5038E /* Project object */;
+}
