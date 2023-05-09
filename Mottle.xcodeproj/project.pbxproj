@@ -23,6 +23,12 @@
 		02E55DC72A0A35F300AF8767 /* Partie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E55DC62A0A35F300AF8767 /* Partie.swift */; };
 		02E55DC82A0A35F300AF8767 /* Partie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E55DC62A0A35F300AF8767 /* Partie.swift */; };
 		02E55DC92A0A35F300AF8767 /* Partie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E55DC62A0A35F300AF8767 /* Partie.swift */; };
+		02E55DCD2A0A47FC00AF8767 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E55DCC2A0A47FC00AF8767 /* GameView.swift */; };
+		02E55DCE2A0A47FC00AF8767 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E55DCC2A0A47FC00AF8767 /* GameView.swift */; };
+		02E55DCF2A0A47FC00AF8767 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E55DCC2A0A47FC00AF8767 /* GameView.swift */; };
+		02E55DD22A0A4CA100AF8767 /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E55DD12A0A4CA100AF8767 /* SwiftUIView.swift */; };
+		02E55DD32A0A4CA100AF8767 /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E55DD12A0A4CA100AF8767 /* SwiftUIView.swift */; };
+		02E55DD42A0A4CA100AF8767 /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E55DD12A0A4CA100AF8767 /* SwiftUIView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +65,8 @@
 		020819C12A0A31EC00B5038E /* Mots.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mots.swift; sourceTree = "<group>"; };
 		02E55DC22A0A358400AF8767 /* mots.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mots.txt; sourceTree = "<group>"; };
 		02E55DC62A0A35F300AF8767 /* Partie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Partie.swift; sourceTree = "<group>"; };
+		02E55DCC2A0A47FC00AF8767 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
+		02E55DD12A0A4CA100AF8767 /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,11 +117,13 @@
 		0208198D2A0A2AF200B5038E /* Mottle */ = {
 			isa = PBXGroup;
 			children = (
+				02E55DD02A0A4C9500AF8767 /* View */,
 				02E55DC12A0A358400AF8767 /* Resources */,
 				020819C02A0A31CF00B5038E /* Classes */,
 				0208198E2A0A2AF200B5038E /* AppDelegate.swift */,
 				020819902A0A2AF200B5038E /* SceneDelegate.swift */,
 				020819922A0A2AF200B5038E /* ViewController.swift */,
+				02E55DCC2A0A47FC00AF8767 /* GameView.swift */,
 				020819942A0A2AF200B5038E /* Main.storyboard */,
 				020819972A0A2AF300B5038E /* Assets.xcassets */,
 				020819992A0A2AF300B5038E /* LaunchScreen.storyboard */,
@@ -154,6 +164,14 @@
 				02E55DC22A0A358400AF8767 /* mots.txt */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		02E55DD02A0A4C9500AF8767 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				02E55DD12A0A4CA100AF8767 /* SwiftUIView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -291,9 +309,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				02E55DC72A0A35F300AF8767 /* Partie.swift in Sources */,
+				02E55DD22A0A4CA100AF8767 /* SwiftUIView.swift in Sources */,
 				020819C22A0A31EC00B5038E /* Mots.swift in Sources */,
 				020819932A0A2AF200B5038E /* ViewController.swift in Sources */,
 				0208198F2A0A2AF200B5038E /* AppDelegate.swift in Sources */,
+				02E55DCD2A0A47FC00AF8767 /* GameView.swift in Sources */,
 				020819912A0A2AF200B5038E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -303,6 +323,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				02E55DC82A0A35F300AF8767 /* Partie.swift in Sources */,
+				02E55DCE2A0A47FC00AF8767 /* GameView.swift in Sources */,
+				02E55DD32A0A4CA100AF8767 /* SwiftUIView.swift in Sources */,
 				020819A62A0A2AF300B5038E /* MottleTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -313,7 +335,9 @@
 			files = (
 				02E55DC92A0A35F300AF8767 /* Partie.swift in Sources */,
 				020819B02A0A2AF300B5038E /* MottleUITests.swift in Sources */,
+				02E55DCF2A0A47FC00AF8767 /* GameView.swift in Sources */,
 				020819B22A0A2AF300B5038E /* MottleUITestsLaunchTests.swift in Sources */,
+				02E55DD42A0A4CA100AF8767 /* SwiftUIView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
