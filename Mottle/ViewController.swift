@@ -19,9 +19,6 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.addSubview(imageView)
-        DispatchQueue.main.asyncAfter(deadline: .now()+5) {
-            self.performSegue(withIdentifier: "HomeToGame", sender: self)
-        }
     }
     
     override func viewDidLayoutSubviews() {

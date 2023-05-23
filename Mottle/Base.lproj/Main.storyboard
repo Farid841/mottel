@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="gFT-Ci-tLE">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina6_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,11 +13,11 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Mottle" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MOTTLE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gd7-3M-GFA">
-                                <rect key="frame" x="132" y="373" width="150" height="150"/>
+                                <rect key="frame" x="139" y="388" width="150" height="150"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="lessThanOrEqual" constant="150" id="8Nu-eu-cpj"/>
                                     <constraint firstAttribute="height" constant="150" id="Ow0-GD-wH2"/>
@@ -31,7 +31,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9mI-dm-vgT">
-                                <rect key="frame" x="167" y="598" width="80" height="45"/>
+                                <rect key="frame" x="174" y="613" width="80" height="45"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="bTe-UG-liF"/>
                                     <constraint firstAttribute="width" constant="80" id="gUe-ps-Tzf"/>
@@ -65,33 +65,61 @@
             <objects>
                 <viewController id="VTV-PA-Ebz" customClass="GameView" customModule="Mottle" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hzg-cP-glr">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cxE-lr-GJd">
-                                <rect key="frame" x="87" y="244" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="emE-qq-KVa">
+                                <rect key="frame" x="28" y="153" width="33" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="42v-L6-XWm">
+                                <rect key="frame" x="107" y="153" width="33" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Y23-ax-Je6">
+                                <rect key="frame" x="189" y="153" width="33" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" text="1" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="neM-iR-YHS">
+                                <rect key="frame" x="272" y="153" width="37" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8vC-5D-6nZ">
+                                <rect key="frame" x="362" y="153" width="33" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
                                 <connections>
-                                    <segue destination="U4i-PU-m2C" kind="embed" destinationCreationSelector="GameCells:" id="xoK-Pl-g0x"/>
+                                    <action selector="verif1mot:" destination="VTV-PA-Ebz" eventType="editingChanged" id="40I-QK-p8S"/>
                                 </connections>
-                            </containerView>
+                            </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="dk7-sn-zLq"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Y23-ax-Je6" firstAttribute="centerX" secondItem="hzg-cP-glr" secondAttribute="centerX" id="0N7-qi-Yzc"/>
+                            <constraint firstItem="emE-qq-KVa" firstAttribute="centerY" secondItem="hzg-cP-glr" secondAttribute="centerY" id="OCW-Uc-zFf"/>
+                            <constraint firstItem="42v-L6-XWm" firstAttribute="centerX" secondItem="hzg-cP-glr" secondAttribute="centerX" id="V7J-4D-Ef7"/>
+                            <constraint firstItem="emE-qq-KVa" firstAttribute="centerX" secondItem="hzg-cP-glr" secondAttribute="centerX" id="cTw-SZ-u4I"/>
+                            <constraint firstItem="8vC-5D-6nZ" firstAttribute="centerX" secondItem="hzg-cP-glr" secondAttribute="centerX" id="mKc-0L-zxB"/>
+                            <constraint firstItem="neM-iR-YHS" firstAttribute="centerX" secondItem="hzg-cP-glr" secondAttribute="centerX" id="nCY-77-kow"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="82w-JZ-U2P"/>
+                    <connections>
+                        <outlet property="input1" destination="emE-qq-KVa" id="Jvi-2V-sS1"/>
+                        <outlet property="input2" destination="42v-L6-XWm" id="Thn-ju-uJ9"/>
+                        <outlet property="input3" destination="Y23-ax-Je6" id="3LF-Gs-9Cm"/>
+                        <outlet property="input4" destination="neM-iR-YHS" id="yAp-Ar-gd5"/>
+                        <outlet property="input5" destination="8vC-5D-6nZ" id="Q1r-aN-wzp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wdo-Dc-bEk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1878" y="94"/>
-        </scene>
-        <!--Hosting Controller-->
-        <scene sceneID="gYW-5q-mPc">
-            <objects>
-                <hostingController id="U4i-PU-m2C" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ey7-Jt-3fv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2545" y="94"/>
+            <point key="canvasLocation" x="1876.8115942028987" y="93.75"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="FcP-aS-NKm">
@@ -99,7 +127,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="gFT-Ci-tLE" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Mx8-lU-HvE">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="44" width="428" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
