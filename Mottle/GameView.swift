@@ -42,22 +42,25 @@ class GameView: UIViewController {
     @IBOutlet weak var input19: UITextField!
     @IBOutlet weak var input18: UITextField!
     @IBOutlet weak var input17: UITextField!
+    @IBOutlet weak var label: UILabel!
     @IBAction func verif1mot(_ sender: Any) {
         
         let mot = partie.motChoisi
         
         switch (nbTours){
         case 0 :
-            let motduUser = "\(input1.text!)\(input2.text!)\(input3.text!)\(input4.text!)\(input5.text!)"
+            var motduUser = "\(input1.text!)\(input2.text!)\(input3.text!)\(input4.text!)\(input5.text!)"
+            motduUser = motduUser.uppercased()
             if(motduUser.count == 5) {
         
-             
+                nbTours = nbTours + 1
                 if(mot == motduUser){
                     input1.backgroundColor = UIColor.green
                     input2.backgroundColor = UIColor.green
                     input3.backgroundColor = UIColor.green
                     input4.backgroundColor = UIColor.green
                     input5.backgroundColor = UIColor.green
+                    label.text = "Gagné"
                     print("gagné")
                 }else{
                 for i in 0...4 {
@@ -128,11 +131,18 @@ class GameView: UIViewController {
             }
         
     case 1:
-            let motduUser = "\(input6.text!)\(input7.text!)\(input8.text!)\(input9.text!)\(input10.text!)"
+            var motduUser = "\(input6.text!)\(input7.text!)\(input8.text!)\(input9.text!)\(input10.text!)"
+            motduUser = motduUser.uppercased()
         if(motduUser.count == 5) {
-            
+            nbTours = nbTours + 1
             if(mot == motduUser){
                 print("gagné")
+                input6.backgroundColor = UIColor.green
+                input7.backgroundColor = UIColor.green
+                input8.backgroundColor = UIColor.green
+                input9.backgroundColor = UIColor.green
+                input10.backgroundColor = UIColor.green
+                label.text = "Gagné"
             }else{
                 
            
@@ -204,9 +214,10 @@ class GameView: UIViewController {
             }
         }
         case 2 :
-            let motduUser = "\(input11.text!)\(input12.text!)\(input13.text!)\(input14.text!)\(input15.text!)"
+            var motduUser = "\(input11.text!)\(input12.text!)\(input13.text!)\(input14.text!)\(input15.text!)"
+            motduUser = motduUser.uppercased()
         if(motduUser.count == 5) {
-            
+            nbTours = nbTours + 1
             if(mot == motduUser){
                 print("gagné")
                 input11.backgroundColor = UIColor.green
@@ -214,6 +225,7 @@ class GameView: UIViewController {
                 input13.backgroundColor = UIColor.green
                 input14.backgroundColor = UIColor.green
                 input15.backgroundColor = UIColor.green
+                label.text = "Gagné"
             }else{
                 
            
@@ -284,9 +296,10 @@ class GameView: UIViewController {
            
             }
         }
-        case 3 :let motduUser = "\(input16.text!)\(input17.text!)\(input18.text!)\(input19.text!)\(input20.text!)"
+        case 3 :var motduUser = "\(input16.text!)\(input17.text!)\(input18.text!)\(input19.text!)\(input20.text!)"
+            motduUser = motduUser.uppercased()
             if(motduUser.count == 5) {
-                
+                nbTours = nbTours + 1
                 if(mot == motduUser){
                     print("gagné")
                     input16.backgroundColor = UIColor.green
@@ -294,6 +307,7 @@ class GameView: UIViewController {
                     input18.backgroundColor = UIColor.green
                     input19.backgroundColor = UIColor.green
                     input20.backgroundColor = UIColor.green
+                    label.text = "Gagné"
                 }else{
                     
                
@@ -365,8 +379,10 @@ class GameView: UIViewController {
                 }
             }
             
-        case 4 :let motduUser = "\(input21.text!)\(input22.text!)\(input23.text!)\(input24.text!)\(input25.text!)"
+        case 4 :var motduUser = "\(input21.text!)\(input22.text!)\(input23.text!)\(input24.text!)\(input25.text!)"
+            motduUser = motduUser.uppercased()
             if(motduUser.count == 5) {
+                nbTours = nbTours + 1
                 
                 if(mot == motduUser){
                     input21.backgroundColor = UIColor.green
@@ -374,6 +390,7 @@ class GameView: UIViewController {
                     input23.backgroundColor = UIColor.green
                     input24.backgroundColor = UIColor.green
                     input25.backgroundColor = UIColor.green
+                    label.text = "Gagné"
                     
                     print("gagné")
                 }else{
@@ -446,10 +463,11 @@ class GameView: UIViewController {
                
                 }
             }
-        default: print("terminé")
+        default:  label.text = "Perdu, le mot était : \(mot)"
 
     }
-        nbTours = nbTours + 1
+        
+        
         
      
         
