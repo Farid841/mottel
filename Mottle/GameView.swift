@@ -13,51 +13,17 @@ class GameView: UIViewController {
     let partie = Partie.init()
     var nbTours : Int = 0
     var caseNB : Int = 0
-
+    var motduUser:String = ""
+    var cases : [[UITextField]] = []
     
 
-    @IBOutlet weak var input1: UITextField!
-    @IBOutlet weak var input2: UITextField!
-    @IBOutlet weak var input3: UITextField!
-    @IBOutlet weak var input4: UITextField!
-    @IBOutlet weak var input5: UITextField!
-    @IBOutlet weak var input6: UITextField!
-    @IBOutlet weak var input7: UITextField!
-    @IBOutlet weak var input8: UITextField!
-    @IBOutlet weak var input9: UITextField!
-    @IBOutlet weak var input10: UITextField!
-   
-    @IBOutlet weak var input11: UITextField!
-    @IBOutlet weak var input12: UITextField!
-    @IBOutlet weak var input13: UITextField!
-    @IBOutlet weak var input14: UITextField!
-    @IBOutlet weak var input15: UITextField!
-    @IBOutlet weak var input16: UITextField!
-    
-    @IBOutlet weak var input25: UITextField!
-    @IBOutlet weak var input24: UITextField!
-    @IBOutlet weak var input23: UITextField!
-    @IBOutlet weak var input22: UITextField!
-    @IBOutlet weak var input21: UITextField!
-    @IBOutlet weak var input20: UITextField!
-    @IBOutlet weak var input19: UITextField!
-    @IBOutlet weak var input18: UITextField!
-    @IBOutlet weak var input17: UITextField!
-    
-    
-//    @IBOutlet var premiereLigne:[UITextField]!
+    @IBOutlet weak var btnRejouter: UIButton!
     @IBOutlet var premiereLigne: [UITextField]!
     @IBOutlet var secondeLigne: [UITextField]!
     @IBOutlet var troisiemeLigne: [UITextField]!
     @IBOutlet var quatriemeLigne: [UITextField]!
     @IBOutlet var cinquiemeLigne: [UITextField]!
-    
     @IBOutlet weak var label: UILabel!
-    
-    var motduUser:String = ""
-    
-    
-    var cases : [[UITextField]] = []
     
     override func viewDidLoad() {
         
@@ -67,20 +33,44 @@ class GameView: UIViewController {
         cases.append(quatriemeLigne)
         cases.append(cinquiemeLigne)
         cases[0][0].becomeFirstResponder()
+        btnRejouter.isHidden = true
         
     }
+    
+    
+    
+    
+    @IBAction func restartGame(_ sender: Any) {
+        for group in cases {
+            for input in group{
+                input.isEnabled = true
+                input.text = ""
+                input.backgroundColor = UIColor.white
+                
+            }
+        }
+        nbTours = 0
+        caseNB = 0
+        label.text = ""
+        cases[0][0].becomeFirstResponder()
+        btnRejouter.isHidden = true
+        
+    }
+    
  
     @IBAction func prochaineCase(_ sender: Any) {
         caseNB  = caseNB + 1
         cases[nbTours][caseNB].becomeFirstResponder()
-        print(nbTours)
+        
     }
     
     func finPartie(statut : String){
-        print("call")
+        
         switch statut {
                 case "gagné" : label.text = "Gagné"
+                               btnRejouter.isHidden = false
                 case "perdu" : label.text = "Perdu"
+                               btnRejouter.isHidden = false
                 default: label.text = "Erreur"
         }
     }
@@ -131,7 +121,12 @@ class GameView: UIViewController {
             if(tour < 4){
                 cases[tour+1][0].becomeFirstResponder()
             }else{
-                finPartie(statut: "perdu")
+                if(mot == motduUser){
+                    finPartie(statut: "gagné")
+                }else{
+                    finPartie(statut: "perdu")
+                }
+                
             }
             
             
@@ -146,7 +141,7 @@ class GameView: UIViewController {
         verifierMot(tour: nbTours)
         nbTours = nbTours + 1;
         caseNB = 0
-        print(nbTours)
+     
         }
     }
     
