@@ -8,9 +8,13 @@
 import UIKit
 import SwiftUI
 
+class CustomUI : UIView {
+    
+}
+
 class GameView: UIViewController {
     
-    let partie = Partie.init()
+    var partie = Partie.init()
     var nbTours : Int = 0
     var caseNB : Int = 0
     var motduUser:String = ""
@@ -25,7 +29,11 @@ class GameView: UIViewController {
     @IBOutlet var cinquiemeLigne: [UITextField]!
     @IBOutlet weak var label: UILabel!
     
+    @IBOutlet var premiereRange: [UIButton]!
+    @IBOutlet var secondeRange: [UIButton]!
+    @IBOutlet var troisiemeRange: [UIButton]!
     override func viewDidLoad() {
+        
         
         cases.append(premiereLigne)
         cases.append(secondeLigne)
@@ -34,33 +42,85 @@ class GameView: UIViewController {
         cases.append(cinquiemeLigne)
         cases[0][0].becomeFirstResponder()
         btnRejouter.isHidden = true
+        cases[0][0].inputView = UIView()
+        
+        
         
     }
     
     
     
+
+    @IBAction func test(_ sender: Any) {
+        print("test restart")
+    }
     
     @IBAction func restartGame(_ sender: Any) {
+        print("restart")
         for group in cases {
             for input in group{
-                input.isEnabled = true
+                input.isEnabled = false
                 input.text = ""
                 input.backgroundColor = UIColor.white
                 
             }
         }
+        partie = Partie.init()
         nbTours = 0
         caseNB = 0
         label.text = ""
         cases[0][0].becomeFirstResponder()
+        cases[0][0].inputView = UIView()
         btnRejouter.isHidden = true
         
     }
     
- 
-    @IBAction func prochaineCase(_ sender: Any) {
+    @IBAction func appuieLettre(_ sender: UIButton) {
+        let lettre = sender.titleLabel
+        
+            cases[nbTours][caseNB].text = lettre?.text!
+        if(caseNB < 4){
+            prochaineCaseClavierVirtuel()
+        }else{
+          
+            if(nbTours > 4 ){
+                 finPartie(statut: "perdu")
+             }else{
+                 verifierMot(tour: nbTours)
+                 nbTours = nbTours + 1;
+                 caseNB = 0
+     
+             }
+        }
+    }
+    func prochaineCaseClavierVirtuel(){
+   
         caseNB  = caseNB + 1
+        print(caseNB)
+        cases[nbTours][caseNB].inputView = UIView()
         cases[nbTours][caseNB].becomeFirstResponder()
+       
+        
+    }
+    @IBAction func effacerlettre(_ sender: Any) {
+        if(caseNB > 0){
+            caseNB  = caseNB - 1
+            print(caseNB)
+            cases[nbTours][caseNB].text = ""
+            cases[nbTours][caseNB].inputView = UIView()
+            cases[nbTours][caseNB].becomeFirstResponder()
+        
+        }
+    }
+    
+    @IBAction func prochaineCase(_ sender: Any) {
+      
+        caseNB  = caseNB + 1
+        print(caseNB)
+        cases[nbTours][caseNB].inputView = UIView()
+        cases[nbTours][caseNB].becomeFirstResponder()
+        
+     
         
     }
     
@@ -68,8 +128,9 @@ class GameView: UIViewController {
         
         switch statut {
                 case "gagné" : label.text = "Gagné"
+            print(btnRejouter.isEnabled)
                                btnRejouter.isHidden = false
-                case "perdu" : label.text = "Perdu"
+        case "perdu" : label.text = "Perdu le mot était \(partie.motChoisi)"
                                btnRejouter.isHidden = false
                 default: label.text = "Erreur"
         }
@@ -119,7 +180,9 @@ class GameView: UIViewController {
                 }
             }
             if(tour < 4){
+                cases[tour+1][0].inputView = UIView()
                 cases[tour+1][0].becomeFirstResponder()
+               
             }else{
                 if(mot == motduUser){
                     finPartie(statut: "gagné")
