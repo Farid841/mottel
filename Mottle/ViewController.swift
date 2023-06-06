@@ -6,13 +6,14 @@
 //
 
 import UIKit
+import SpriteKit
 
 class ViewController: UIViewController {
     
     var imageView: UIImageView = {
         
-        let imageView = UIImageView(frame: CGRect(x:0, y:0, width:150, height: 150))
-        imageView.image = UIImage(named: "Gaming")
+        let imageView = UIImageView(frame: CGRect(x:0, y:0, width: 370, height: 370))
+        imageView.image = UIImage(named: "logo")
         return imageView
     }()
 
@@ -24,7 +25,7 @@ class ViewController: UIViewController {
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         imageView.center = view.center
-        DispatchQueue.main.asyncAfter(deadline: .now() + 5){
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2){
             self.animation()
             
         }
