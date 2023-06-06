@@ -7,7 +7,7 @@
 
 import UIKit
 import SwiftUI
-
+import CoreData
 class GameView: UIViewController {
     
     let partie = Partie.init()
@@ -37,7 +37,7 @@ class GameView: UIViewController {
         
     }
     
-    
+
     
     
     @IBAction func restartGame(_ sender: Any) {
@@ -65,7 +65,7 @@ class GameView: UIViewController {
     }
     
     func finPartie(statut : String){
-        
+        saveScore(value: 500)
         switch statut {
                 case "gagné" : label.text = "Gagné"
                                btnRejouter.isHidden = false
@@ -143,7 +143,35 @@ class GameView: UIViewController {
         caseNB = 0
      
         }
+        saveScore(value: 500)
     }
     
+    func saveScore(value: Int) {
+        
+        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
+            return
+        }
+
+        let managedContext = appDelegate.persistentContainer.viewContext
+
+        // Création d'une instance de Score
+        if let scoreEntity = NSEntityDescription.entity(forEntityName: "Ascore", in: managedContext) {
+            print("Nous avons une erreur ++")
+            let score = NSManagedObject(entity: scoreEntity, insertInto: managedContext)
+
+            // Définition de la valeur du score
+            score.setValue(value, forKey: "value")
+            
+            do {
+                // Sauvegarde des modifications dans le contexte de Core Data
+                try managedContext.save()
+                print("Score enregistré avec succès")
+            } catch let error as NSError {
+                print("Impossible d'enregistrer le score. Erreur : \(error), \(error.userInfo)")
+            }
+        }
+        else{
+            print("Dans le else")
+        }
+    }
 }
-    

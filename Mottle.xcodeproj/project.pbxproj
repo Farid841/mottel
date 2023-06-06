@@ -29,6 +29,7 @@
 		02E55DD22A0A4CA100AF8767 /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E55DD12A0A4CA100AF8767 /* SwiftUIView.swift */; };
 		02E55DD32A0A4CA100AF8767 /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E55DD12A0A4CA100AF8767 /* SwiftUIView.swift */; };
 		02E55DD42A0A4CA100AF8767 /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E55DD12A0A4CA100AF8767 /* SwiftUIView.swift */; };
+		281302902A2F2F3E00489AD8 /* Score.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2813028E2A2F2F3E00489AD8 /* Score.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,7 @@
 		02E55DC62A0A35F300AF8767 /* Partie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Partie.swift; sourceTree = "<group>"; };
 		02E55DCC2A0A47FC00AF8767 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
 		02E55DD12A0A4CA100AF8767 /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
+		2813028F2A2F2F3E00489AD8 /* Score.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Score.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 		020819822A0A2AF200B5038E = {
 			isa = PBXGroup;
 			children = (
+				2813028E2A2F2F3E00489AD8 /* Score.xcdatamodeld */,
 				0208198D2A0A2AF200B5038E /* Mottle */,
 				020819A42A0A2AF300B5038E /* MottleTests */,
 				020819AE2A0A2AF300B5038E /* MottleUITests */,
@@ -314,6 +317,7 @@
 				020819932A0A2AF200B5038E /* ViewController.swift in Sources */,
 				0208198F2A0A2AF200B5038E /* AppDelegate.swift in Sources */,
 				02E55DCD2A0A47FC00AF8767 /* GameView.swift in Sources */,
+				281302902A2F2F3E00489AD8 /* Score.xcdatamodeld in Sources */,
 				020819912A0A2AF200B5038E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -656,6 +660,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		2813028E2A2F2F3E00489AD8 /* Score.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				2813028F2A2F2F3E00489AD8 /* Score.xcdatamodel */,
+			);
+			currentVersion = 2813028F2A2F2F3E00489AD8 /* Score.xcdatamodel */;
+			path = Score.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 020819832A0A2AF200B5038E /* Project object */;
 }
