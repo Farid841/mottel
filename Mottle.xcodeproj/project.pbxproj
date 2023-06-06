@@ -29,6 +29,7 @@
 		02E55DD22A0A4CA100AF8767 /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E55DD12A0A4CA100AF8767 /* SwiftUIView.swift */; };
 		02E55DD32A0A4CA100AF8767 /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E55DD12A0A4CA100AF8767 /* SwiftUIView.swift */; };
 		02E55DD42A0A4CA100AF8767 /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E55DD12A0A4CA100AF8767 /* SwiftUIView.swift */; };
+		4422B86D2A2F29D10027E819 /* ChoisirLvl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4422B86C2A2F29D10027E819 /* ChoisirLvl.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,7 @@
 		02E55DC62A0A35F300AF8767 /* Partie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Partie.swift; sourceTree = "<group>"; };
 		02E55DCC2A0A47FC00AF8767 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
 		02E55DD12A0A4CA100AF8767 /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
+		4422B86C2A2F29D10027E819 /* ChoisirLvl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoisirLvl.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +126,7 @@
 				020819902A0A2AF200B5038E /* SceneDelegate.swift */,
 				020819922A0A2AF200B5038E /* ViewController.swift */,
 				02E55DCC2A0A47FC00AF8767 /* GameView.swift */,
+				4422B86C2A2F29D10027E819 /* ChoisirLvl.swift */,
 				020819942A0A2AF200B5038E /* Main.storyboard */,
 				020819972A0A2AF300B5038E /* Assets.xcassets */,
 				020819992A0A2AF300B5038E /* LaunchScreen.storyboard */,
@@ -310,6 +313,7 @@
 			files = (
 				02E55DC72A0A35F300AF8767 /* Partie.swift in Sources */,
 				02E55DD22A0A4CA100AF8767 /* SwiftUIView.swift in Sources */,
+				4422B86D2A2F29D10027E819 /* ChoisirLvl.swift in Sources */,
 				020819C22A0A31EC00B5038E /* Mots.swift in Sources */,
 				020819932A0A2AF200B5038E /* ViewController.swift in Sources */,
 				0208198F2A0A2AF200B5038E /* AppDelegate.swift in Sources */,
