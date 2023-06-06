@@ -7,6 +7,34 @@
 
 import UIKit
 import SwiftUI
+import SpriteKit
+
+
+// creation de la classe me permettant d'afficher par dessous le view
+class ParticleScene: SKScene {
+
+    override init(size: CGSize) {
+        super.init(size: size)
+
+        backgroundColor = .clear
+
+        if let emitter1 = SKEmitterNode(fileNamed: "MyParticle-2") {
+            emitter1.position.y = size.height
+            emitter1.particleColorSequence = nil
+            emitter1.particleColorBlendFactor = 1
+            emitter1.particleColorBlueRange = 1
+            emitter1.particleColorGreenRange = 1
+            emitter1.particleColorRedRange = 1
+            emitter1.position.x = size.width
+            addChild(emitter1)
+        }
+    }
+
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+
+}
 
 class GameView: UIViewController {
     
@@ -64,11 +92,71 @@ class GameView: UIViewController {
         
     }
     
+    // fonction de l'animation
+    func showWinningEffect(on view: SKView) {
+           
+           let scene = SKScene(size: view.bounds.size)
+           scene.scaleMode = .aspectFill
+           
+           if let particleScene = SKScene(fileNamed: "Myparticule-2") {
+               
+               if let confettiEmitter = particleScene.childNode(withName: "confettiEmitter") as? SKEmitterNode {
+                   
+                   confettiEmitter.position =
+                   CGPoint(x: scene.size.width / 2, y: scene.size.height / 2)
+                   confettiEmitter.targetNode = scene
+                   confettiEmitter.numParticlesToEmit = 1000
+                   confettiEmitter.particleBirthRate = 300
+                   confettiEmitter.particleLifetime = 5
+                   confettiEmitter.particleSpeed = 500
+                   confettiEmitter.particleSpeedRange = 100
+                   confettiEmitter.particleAlpha = 1.0
+                   confettiEmitter.particleAlphaRange = 0.5
+                   confettiEmitter.particleScale = 0.5
+                   confettiEmitter.particleScaleRange = 0.3
+                   confettiEmitter.particleScaleSpeed = -0.1
+                   confettiEmitter.particleColorBlendFactor = 1.0
+                   confettiEmitter.particleColorSequence = nil
+                   confettiEmitter.particleColorBlendFactorSequence = nil
+                   confettiEmitter.particleColor = UIColor.red
+                   confettiEmitter.particleColorRedRange = 1.0
+                   confettiEmitter.particleColorGreenRange = 1.0
+                   confettiEmitter.particleColorBlueRange = 1.0
+                   
+                   scene.addChild(confettiEmitter)
+                   
+               }
+           }
+           view.presentScene(scene)
+       }
+
+    
     func finPartie(statut : String){
         
         switch statut {
                 case "gagné" : label.text = "Gagné"
                                btnRejouter.isHidden = false
+                               let skView = SKView(frame: view.bounds)
+                               let particleScene = ParticleScene(size: skView.bounds.size)
+
+                               skView.presentScene(particleScene)
+                               skView.alpha = 0.0
+
+                              view.addSubview(skView)
+
+                             UIView.animate(withDuration: 1.0, animations: {
+                                 skView.alpha = 1.0
+                             }) { _ in
+                                    DispatchQueue.main.asyncAfter(deadline: .now() + 3.0) {
+                                        UIView.animate(withDuration: 1.0) {
+                                            skView.alpha = 0.0
+                                        } completion: { _ in
+                                            skView.removeFromSuperview()
+                                        }
+                                    }
+                                }
+
+                               
                 case "perdu" : label.text = "Perdu"
                                btnRejouter.isHidden = false
                 default: label.text = "Erreur"
