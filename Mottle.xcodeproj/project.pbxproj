@@ -29,7 +29,6 @@
 		02E55DD22A0A4CA100AF8767 /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E55DD12A0A4CA100AF8767 /* SwiftUIView.swift */; };
 		02E55DD32A0A4CA100AF8767 /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E55DD12A0A4CA100AF8767 /* SwiftUIView.swift */; };
 		02E55DD42A0A4CA100AF8767 /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E55DD12A0A4CA100AF8767 /* SwiftUIView.swift */; };
-		9815BEE12A2F3A0700EE8696 /* MyParticle-2.sks in Resources */ = {isa = PBXBuildFile; fileRef = 9815BEE02A2F3A0700EE8696 /* MyParticle-2.sks */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,7 +67,6 @@
 		02E55DC62A0A35F300AF8767 /* Partie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Partie.swift; sourceTree = "<group>"; };
 		02E55DCC2A0A47FC00AF8767 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
 		02E55DD12A0A4CA100AF8767 /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
-		9815BEE02A2F3A0700EE8696 /* MyParticle-2.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; name = "MyParticle-2.sks"; path = "../../../Downloads/MyParticle-2.sks"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,7 +124,6 @@
 				020819902A0A2AF200B5038E /* SceneDelegate.swift */,
 				020819922A0A2AF200B5038E /* ViewController.swift */,
 				02E55DCC2A0A47FC00AF8767 /* GameView.swift */,
-				9815BEE02A2F3A0700EE8696 /* MyParticle-2.sks */,
 				020819942A0A2AF200B5038E /* Main.storyboard */,
 				020819972A0A2AF300B5038E /* Assets.xcassets */,
 				020819992A0A2AF300B5038E /* LaunchScreen.storyboard */,
@@ -283,7 +280,6 @@
 			files = (
 				0208199B2A0A2AF300B5038E /* LaunchScreen.storyboard in Resources */,
 				02E55DC32A0A358400AF8767 /* mots.txt in Resources */,
-				9815BEE12A2F3A0700EE8696 /* MyParticle-2.sks in Resources */,
 				020819982A0A2AF300B5038E /* Assets.xcassets in Resources */,
 				020819962A0A2AF200B5038E /* Main.storyboard in Resources */,
 			);
