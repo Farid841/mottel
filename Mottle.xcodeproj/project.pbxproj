@@ -30,6 +30,7 @@
 		02E55DD32A0A4CA100AF8767 /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E55DD12A0A4CA100AF8767 /* SwiftUIView.swift */; };
 		02E55DD42A0A4CA100AF8767 /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E55DD12A0A4CA100AF8767 /* SwiftUIView.swift */; };
 		75B5A1292A2D07FA0000CA32 /* MyParticle.sks in Resources */ = {isa = PBXBuildFile; fileRef = 75B5A1282A2D07F90000CA32 /* MyParticle.sks */; };
+		75D606B62A35DC1B00DB8901 /* ChoiceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D606B52A35DC1B00DB8901 /* ChoiceView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,7 @@
 		02E55DCC2A0A47FC00AF8767 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
 		02E55DD12A0A4CA100AF8767 /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
 		75B5A1282A2D07F90000CA32 /* MyParticle.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; name = MyParticle.sks; path = ../../../Downloads/MyParticle.sks; sourceTree = "<group>"; };
+		75D606B52A35DC1B00DB8901 /* ChoiceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoiceView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +128,7 @@
 				020819902A0A2AF200B5038E /* SceneDelegate.swift */,
 				020819922A0A2AF200B5038E /* ViewController.swift */,
 				02E55DCC2A0A47FC00AF8767 /* GameView.swift */,
+				75D606B52A35DC1B00DB8901 /* ChoiceView.swift */,
 				75B5A1282A2D07F90000CA32 /* MyParticle.sks */,
 				020819942A0A2AF200B5038E /* Main.storyboard */,
 				020819972A0A2AF300B5038E /* Assets.xcassets */,
@@ -313,6 +316,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				02E55DC72A0A35F300AF8767 /* Partie.swift in Sources */,
+				75D606B62A35DC1B00DB8901 /* ChoiceView.swift in Sources */,
 				02E55DD22A0A4CA100AF8767 /* SwiftUIView.swift in Sources */,
 				020819C22A0A31EC00B5038E /* Mots.swift in Sources */,
 				020819932A0A2AF200B5038E /* ViewController.swift in Sources */,
